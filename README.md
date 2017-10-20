@@ -1,9 +1,9 @@
 # jquery.atSomebody.js
 ## 实现在元素中自由的@某人并加载出人名列表
 
-### 引用
+#### 引用
 ```html
-sass可以当做一个模块直接被引用到自己的scss文件中，
+css:jquery.atSomebody.scss,可以当做一个模块直接被引用到自己的scss文件中，
 <script src="js/jquery.atSomebody.js"></script>必须引用在jq下面
 ```
 #### html
@@ -49,6 +49,5 @@ $(元素).atSomebody(options);//元素的选取使用正常的jq方法，自己�
 #### 注意
 
 * 在scss模块中存在两个变量
-* $size:18px;
-* $height:30px;
-* 这两个变量，size是规定字体的大小，height是规定一行的高度，以及文字的行高，可自行配置
+* $size:18px;规定字体的大小
+* $height:30px;规定一行的高度，以及文字的行高
