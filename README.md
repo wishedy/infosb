@@ -1,15 +1,18 @@
-#jquery.atSomebody.js
-##实现在元素中自由的@某人并加载出人名列表
+# jquery.atSomebody.js
+## 实现在元素中自由的@某人并加载出人名列表
 
-###引用
-####html
+### 引用
+```html
+sass可以当做一个模块直接被引用到自己的scss文件中，
+<script src="js/jquery.atSomebody.js"></script>必须引用在jq下面
+```
+#### html
 >
 ```html
 <元素></元素>：元素必须是一个块级元素 
 ```
 
-####js
->
+#### js
 ```javascript 
 var options = {
     path:"接口请求路径"，
@@ -26,7 +29,7 @@ var options = {
 
 $(元素).atSomebody(options);//元素的选取使用正常的jq方法，自己规定
 ```
-####css
+#### css
 ```css
 目前的样式是参考唯医病例-发布-提醒某人下的样式
 在使用是可以将sass模块jquery.atSomobody.scss当做一个模块引入自己的sass文件，由于各端样式不统一，这里可供修改样式的class做一个说明；
@@ -43,12 +46,9 @@ $(元素).atSomebody(options);//元素的选取使用正常的jq方法，自己�
 艾特单元元素医院：atSomebodyHospital
 
 ```
-####注意
->
->在scss模块中存在两个变量
->
->$size:18px;
->
->$height:30px;
->
->这两个变量，size是规定字体的大小，height是规定一行的高度，以及文字的行高，可自行配置
+#### 注意
+
+* 在scss模块中存在两个变量
+* $size:18px;
+* $height:30px;
+* 这两个变量，size是规定字体的大小，height是规定一行的高度，以及文字的行高，可自行配置
