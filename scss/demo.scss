@@ -1,0 +1,16 @@
+.demo-out-container{
+  width: 800px;
+  height: 800px;
+  margin: 100px auto;
+  background: #ddd;
+  position: relative;
+  .demo-obj{
+    width: 700px;
+    height: 550px;
+    background: #fff;
+    position: absolute;
+    top:0;
+    left: 10%;
+    border: 1px solid #333;
+  }
+}

@@ -1,0 +1,77 @@
+$size:18px;
+$height:30px;
+.atSomebody{
+  i{
+    float: left;
+  }
+  .atSomebodyBar{
+    height: $height;
+    font-size: $size;
+    color: #333;
+    line-height: $height;
+    display: inline;
+    position: relative;
+    float: left;
+    .atSomebodyInput,.atSomebodyInput:focus{
+      outline: none;
+      border: 0;
+      background: none;
+      height: 30px;
+      font-size: 18px;
+      color: #333;
+      line-height: 30px;
+      width: 2px;
+      display: inline;
+    }
+    .atSomebodyInputLight,.atSomebodyInputLight:focus{
+      color: #2899E6;
+      width: 200px;
+    }
+    .atSomebodyList{
+      position: absolute;
+      height: 196px;
+      top: $height;
+      left: -10px;
+      display: none;
+      z-index: 2;
+      background: #FFFFFF;
+      border: 1px solid #EFF2F4;
+      box-shadow: -1px 1px 12px 0 rgba(197, 206, 214, 0.38);
+      width: 438px;
+      overflow: auto;
+      .atSomebodyItem{
+        color: #909090;
+        height: 30px;
+        font-size: $size;
+        line-height: 30px;
+        cursor: pointer;
+        .atSomebodyLogo{
+          width: 24px;
+          height: 24px;
+          border-radius: 100px;
+          vertical-align: bottom;
+          margin-left: 19px;
+        }
+        .atSomebodyDoctor{
+          margin-left: 14px;
+          display: inline-block;
+          color: #333;
+        }
+        .atSomebodyHospital{
+          color: #909090;
+          margin-left: 10px;
+        }
+      }
+    }
+    .upSide{
+      bottom:$height;
+    }
+    .downSide{
+      top: $height;
+    }
+  }
+  .atSomebodyTips{
+    color: #2899E6;
+  }
+
+}

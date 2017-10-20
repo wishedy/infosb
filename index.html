@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/jquery.atSomebody.css">
+</head>
+<body>
+<div class="demo-out-container">
+    <div class="demo-obj"></div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.js"></script>
+<script src="https://cdn.bootcss.com/jquery-json/2.6.0/jquery.json.min.js"></script>
+<script src="js/jquery.atSomebody.js"></script>
+<script>
+    $(".demo-obj").atSomebody({
+        postData: function (str) {
+            return {
+                keyVal: str
+            }
+        },
+        filterData: function (data) {
+            console.log(data);
+            var originalData = JSON.parse(JSON.stringify(data));
+            var listData = [];
+            $.each(originalData.responseObject.responseData.data_list,function(i,v){
+               var dataJson = {
+                   customerId:v.customer_auth.customerId,
+                   customerName:v.customer_auth.lastName+v.customer_auth.firstName,
+                   hospital:v.customer_auth.company,
+                   logoUrl:v.customer_att.logoUrl
+               };
+               listData.push(dataJson);
+            });
+            return listData;
+        },
+        path: "data/list.json"
+    });
+</script>
+</body>
+</html>

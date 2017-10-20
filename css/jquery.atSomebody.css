@@ -1,0 +1,62 @@
+.atSomebody i {
+  float: left; }
+.atSomebody .atSomebodyBar {
+  height: 30px;
+  font-size: 18px;
+  color: #333;
+  line-height: 30px;
+  display: inline;
+  position: relative;
+  float: left; }
+  .atSomebody .atSomebodyBar .atSomebodyInput, .atSomebody .atSomebodyBar .atSomebodyInput:focus {
+    outline: none;
+    border: 0;
+    background: none;
+    height: 30px;
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+    width: 2px;
+    display: inline; }
+  .atSomebody .atSomebodyBar .atSomebodyInputLight, .atSomebody .atSomebodyBar .atSomebodyInputLight:focus {
+    color: #2899E6;
+    width: 200px; }
+  .atSomebody .atSomebodyBar .atSomebodyList {
+    position: absolute;
+    height: 196px;
+    top: 30px;
+    left: -10px;
+    display: none;
+    z-index: 2;
+    background: #FFFFFF;
+    border: 1px solid #EFF2F4;
+    box-shadow: -1px 1px 12px 0 rgba(197, 206, 214, 0.38);
+    width: 438px;
+    overflow: auto; }
+    .atSomebody .atSomebodyBar .atSomebodyList .atSomebodyItem {
+      color: #909090;
+      height: 30px;
+      font-size: 18px;
+      line-height: 30px;
+      cursor: pointer; }
+      .atSomebody .atSomebodyBar .atSomebodyList .atSomebodyItem .atSomebodyLogo {
+        width: 24px;
+        height: 24px;
+        border-radius: 100px;
+        vertical-align: bottom;
+        margin-left: 19px; }
+      .atSomebody .atSomebodyBar .atSomebodyList .atSomebodyItem .atSomebodyDoctor {
+        margin-left: 14px;
+        display: inline-block;
+        color: #333; }
+      .atSomebody .atSomebodyBar .atSomebodyList .atSomebodyItem .atSomebodyHospital {
+        color: #909090;
+        margin-left: 10px; }
+  .atSomebody .atSomebodyBar .upSide {
+    bottom: 30px; }
+  .atSomebody .atSomebodyBar .downSide {
+    top: 30px; }
+.atSomebody .atSomebodyTips {
+  color: #2899E6; }
+
+/*# sourceMappingURL=jquery.atSomebody.css.map */
